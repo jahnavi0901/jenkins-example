@@ -1,0 +1,8 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Spring mvc</title>
+	</head>
+	<body>
+		<h1 th:text="${heading}"></h1>
+	</body>
+</html>

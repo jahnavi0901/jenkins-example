@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.example.demo.model&apos; to &apos;hospital-service-2/src/main/resources&apos;&#x0D;&#x0A;- Original project: &apos;Hospital-service&apos;&#x0D;&#x0A;- Destination element: &apos;hospital-service-2/src/main/resources&apos;&#x0D;&#x0A;- Original element: &apos;Hospital-service/src/main/java/com.example.demo.model&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=hospital-service-2/src\/main\/resources=/maven.pomderived=/true=/=/optional=/true=/" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.demo.model" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1716828754742" version="1.0"/>
+</session>

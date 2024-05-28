@@ -1,0 +1,22 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext;
+
+import com.example.demo.model.Task;
+
+import com.example.demo.model.Task;
+
+@SpringBootApplication
+public class HospitalServiceApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HospitalServiceApplication.class, args);
+		
+		AnnotationConfigServletWebServerApplicationContext cxt;
+		
+		Task bean =cxt.getBean(Task.class);
+	}
+
+}

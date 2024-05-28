@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: hospital-service-2
+  datasource:
+   url: jdbc:postgresql://localhost:5432/training
+   username: postgres
+   password: root
+   
+  jpa:
+    show-sql: true
+    hibernate:
+     ddl-auto: update
+   

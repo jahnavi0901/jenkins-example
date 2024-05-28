@@ -1,0 +1,29 @@
+package com.example.demo.services;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entity.Tasks;
+import com.example.demo.ifaces.TasksRepository;
+
+@Service
+public class TasksService {
+
+	
+	private TasksRepository repo;
+	
+	//repo will be injected
+	public TasksService(TasksRepository repo) {
+		super();
+		this.repo=repo;
+	}
+	
+	public Tasks save(Tasks entity) {
+		return this.repo.save(entity);
+	}
+	public List<Tasks> findAll() {
+		return this.repo.findAll();
+	}
+	
+}

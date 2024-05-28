@@ -1,0 +1,18 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Show Tasks</title>
+	</head>
+	<body>
+		<table>
+		<tbody>
+			<tr:each="eachItem:${list}">
+
+			 <td:text="${eachItem.id}"></td>
+			 <td:text="${eachItem.task}"></th>
+			
+			</tr>
+
+		</tbody>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: tasks_service
+  datasource:
+   url: jdbc:postgresql://localhost:5432/training
+   username: postgress
+   password: root
+   
+   jpa:
+    show-sql: true
+    hibernate:
+     ddl-auto: update
+   

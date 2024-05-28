@@ -1,0 +1,57 @@
+package com.example.demo.entity;
+
+import java.time.LocalDate;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="product")
+public class Product {
+	private long id;
+	private String productName;
+	private double ratePerUnit;
+	private LocalDate  expiryDate;
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getProductName() {
+		return productName;
+	}
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+	public double getRatePerUnit() {
+		return ratePerUnit;
+	}
+	public void setRatePerUnit(double ratePerUnit) {
+		this.ratePerUnit = ratePerUnit;
+	}
+	public LocalDate getExpiryDate() {
+		return expiryDate;
+	}
+	public void setExpiryDate(LocalDate expiryDate) {
+		this.expiryDate = expiryDate;
+	}
+	public Product(long id, String productName, double ratePerUnit, LocalDate expiryDate) {
+		super();
+		this.id = id;
+		this.productName = productName;
+		this.ratePerUnit = ratePerUnit;
+		this.expiryDate = expiryDate;
+	}
+	public Product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", productName=" + productName + ", ratePerUnit=" + ratePerUnit + ", expiryDate="
+				+ expiryDate + "]";
+	}
+	
+
+}

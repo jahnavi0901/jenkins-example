@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Add Tasks </title>
+	</head>
+	<body>
+		<form action="#" method="post" th:action="tasks" th:object="${command}" >
+			<label>Id</label>
+			
+			<input type="text" th:field="*{id}">
+			<label>Task</label>
+			<input type="text" name="task" th:field="*{task}">
+			<label>AssignedTo</label>
+			<input type="text" th:field="*{assignedTo}">
+			<label>Completion Date</label>
+
+			<input type="text" th:field="*{completionDate}">
+			<input type="submit" value="Submit">
+			
+		</form>
+	</body>
+</html>

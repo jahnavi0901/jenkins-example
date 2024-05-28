@@ -1,0 +1,52 @@
+package com.example.demo.services;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.entity.Tasks;
+import com.example.demo.ifaces.TasksRepository;
+
+@Service
+public class TasksService {
+
+	
+	private TasksRepository repo;
+	
+	//repo will be injected
+	public TasksService(TasksRepository repo) {
+		super();
+		this.repo=repo;
+	}
+	
+	public Tasks save(Tasks entity) {
+		return this.repo.save(entity);
+	}
+	public List<Tasks> findAll() {
+		return this.repo.findAll();
+	}
+	
+	public List<Tasks> findById(Iterable<Integer> id) {
+		return this.repo.findAllById(id);
+	}
+	
+
+public void deleteById(Integer id) {
+	 this.repo.deleteById(id);
+}
+public Tasks update(Tasks tasks) {
+	return this.repo.saveAndFlush(tasks);
+}
+public Map<String,String> getTaskAndAssigne(){
+	
+	Map<String,String> data=new HashMap();
+	List<Tasks> DataList=this.repo.findAll();
+	for(Tasks task:DataList) {
+		DataList.put(task.getTask(),task.getAssignedTo());
+	}
+	return data;
+}
+
+}

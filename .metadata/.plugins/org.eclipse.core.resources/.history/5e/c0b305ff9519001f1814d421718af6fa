@@ -1,0 +1,12 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Search Employee</title>
+	</head>
+	<body>
+	<form th:action="srchbydept">
+		<input id="keyword" type="search"  name="dept" th:value="${dept}">
+		<button type="submit">Search</button>
+	</form>
+	
+	</body>
+</html>

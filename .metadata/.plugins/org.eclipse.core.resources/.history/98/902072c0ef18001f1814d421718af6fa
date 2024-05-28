@@ -1,0 +1,19 @@
+package com.example.demo.services;
+
+import org.springframework.stereotype.Service;
+
+import com.example.demo.ifaces.TasksRepository;
+
+@Service
+public class TasksService {
+
+	
+	private TasksRepository repo;
+	
+	//repo will be injected
+	public TasksService(TasksRepository repo) {
+		super();
+		this.repo=repo;
+	}
+	
+}

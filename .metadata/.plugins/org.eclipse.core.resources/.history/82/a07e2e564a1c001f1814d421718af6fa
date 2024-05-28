@@ -1,0 +1,39 @@
+package com.example.demo.model;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Doctor {
+	
+	private int id;
+	private String doctorName;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDoctorName() {
+		return doctorName;
+	}
+	public void setDoctorName(String doctorName) {
+		this.doctorName = doctorName;
+	}
+	
+	
+	public Doctor() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Doctor(int id, String doctorName) {
+		super();
+		this.id = id;
+		this.doctorName = doctorName;
+	}
+	@Override
+	public String toString() {
+		return "Doctor [id=" + id + ", doctorName=" + doctorName + "]";
+	}
+	
+
+}

@@ -1,0 +1,10 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Show Employees</title>
+	</head>
+	<body>
+		<ol>${eachItem}
+			<lith:each="eachItem:${list}" ></li>
+		</ol>
+	</body>
+</html>
